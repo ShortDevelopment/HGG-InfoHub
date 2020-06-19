@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HGG-MedienHub</title>
+    <link href="MainStyleSheet.css" rel="stylesheet" />
+    <script src="MainScript.js"></script>
+    <script src="http://kurzweb.de/pc/forum/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img id="logo1" src="Media/hgglogo.jpg" />
+        <img id="hgg-alt" src="Media/hgg-alt.png" />
+        <img id="timeline" />
+        <img id="hgg-neu" src="Media/hgg-neu.png" />
+        <img id="logo2" src="Media/hgglogo.jpg" />
+        <h1 id="title">HGG-MedienHub</h1>
+    </div>
+    <div id="infos">
+        <h2 id="title">Medien</h2>
+        <div id="placeholder"></div>
+        <center id="MediaElements">            
+            <div id="m1" title="Video" class="videoPoster" onMouseEnter="MEnter(this)" onmouseleave="MLeave(this)" onclick="playV(this)">
+                <img src="https://i.ytimg.com/vi/Iquk_5hgAKw/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDLGcAHOEvKET958ES_hPiOcuZ9FA"/>
+                <img src="Media/playButton.png" class="playButton" />
+                <p>Die Zeitkapsel Video mit Alexander Gerst</p>                
+            </div>  
+            <div id="m2" title="Video" class="videoPoster" onMouseEnter="MEnter(this)" onmouseleave="MLeave(this)" onclick="playV(this)">
+                <img src="https://i.ytimg.com/vi/lx2M1UiYzAA/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCcCniLUhgorkbU3glVgfTWebmR1Q" />
+                <img src="Media/playButton.png" class="playButton" />
+                <p>DLR-Trailer zur Mission horizons von Alexander Gerst</p>
+            </div>  
+            <div id="m3" title="Video" class="videoPoster" onMouseEnter="MEnter(this)" onmouseleave="MLeave(this)" onclick="playV(this)">
+                <img src="https://www.zdf.de/assets/alexander-gerst-128~1280x720?cb=1505462380964" />
+                <img src="Media/playButton.png" class="playButton" />
+                <p>Horizons - Die neue Mission von Alexander Gerst</p>
+            </div>  
+            <div id="m4" title="Audio" class="videoPoster" onMouseEnter="MEnter(this)" onmouseleave="MLeave(this)" onclick="playA(this)">
+                <img src="https://cdn.pixabay.com/photo/2017/03/12/21/39/boombox-2138198_960_720.png" />
+                <img src="Media/playButton.png" class="playButton" />
+                <p>Team OlTiLu im Radio</p>
+            </div>            
+        </center>
+    </div>
+    <div id="veranstaltungen">
+        <iframe id="countdown" frameborder="0" src="http://www.dlr.de/next/Portaldata/69/Resources/countdown2018/index_without_link.html" sandbox=""></iframe>
+        <video id="video" src="" poster="" controls></video>
+        <audio id="audio" src="" controls></audio>
+    </div>
+</body>
+</html>

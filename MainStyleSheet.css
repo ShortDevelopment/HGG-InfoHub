@@ -1,0 +1,196 @@
+﻿body {
+    margin:0px;
+    background-color:#592336;
+    z-index:1;
+}
+.header{
+    position:relative;
+    width:calc(100% - 6px);
+    height:250px;
+    background:linear-gradient(#a11647, #7E2F4A);
+    border:3px solid #73052b;
+    z-index:2;
+}
+#infos{
+    position:absolute;
+    top:260px;
+    width:300px;
+    height:calc(100% - 271px);
+    border:3px solid #73052b;
+    left:5px;
+    color:yellow;
+    padding-left:5px;
+    background-color:#7E2F4A;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#infos #title{
+    position:absolute;
+    top:-20px;
+    font-size:35px; 
+}
+#veranstaltungen #title{
+    position:absolute;
+    top:-10px; 
+    text-align:center;  
+    width:100%; 
+    font-size:35px;
+    margin-top:15px;
+}
+#veranstaltungen{
+    position:absolute;
+    top:260px;
+    width:calc(100% - 300px - 40px);
+    height:calc(100% - 271px);
+    border:3px solid #73052b;
+    right:5px;
+    color:yellow;
+    padding-left:5px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index:1;
+    /*background-color:#7E2F4A;*/
+}
+#map{
+    width:1100px;
+    height:600px;
+    background-image:url('Media/plan.png');
+    background-size:auto;
+    background-repeat:no-repeat;
+    z-index:5;
+    position:absolute;
+    border-radius:3px;
+    border:2px solid yellow;
+    padding:5px;
+    top:50%;
+    left:50%;
+    margin-left:-550px;
+    margin-top:-300px;
+    display:none;
+}
+#mapSmall{
+    width:250px;
+    height:100px;
+    background-image:url('Media/plan.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:5;
+    position:absolute;
+    border-radius:3px;
+    border:2px solid yellow;
+    padding:5px;
+    bottom:5px;
+    left:5px;    
+}
+#hgg-alt{
+    display:none;
+    position:absolute;
+    top:10px;
+    left:400px;
+    max-height:180px;
+}
+#hgg-neu{
+    display:none;
+    position:absolute;
+    top:10px;
+    right:400px;
+    max-height:180px;
+}
+#timeline{
+    position:absolute;
+    top:10px;
+    left:50%;
+    background-image:url('Media/timeline.png');
+    width:600px;    
+    height:180px;
+    background-size:90%;
+    background-repeat:no-repeat;
+    margin-left:-270px;
+}
+.header #title{
+    text-align:center;
+    width:400px;
+    position:absolute;
+    top:190px;
+    left:50%;
+    margin-left:-200px;
+    max-height:180px;
+    color:greenyellow;
+    font-size:35px;
+    margin-top:5px;
+}
+#logo1{
+    position:absolute;
+    top:50%;
+    left:200px;
+    height:180px;
+    max-width:300px;
+    margin-top:-90px;
+}
+#logo2{
+    position:absolute;
+    top:50%;
+    right:200px;
+    height:180px;
+    max-width:300px;
+    margin-top:-90px;
+}
+.VItem{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:30px; z-index:1;}
+.VItem #time{
+    display:inline-block; 
+    z-index:1;
+    position:relative;
+    left:0px;
+}
+.VItem #what{
+    margin-left:10px; 
+    display:inline-block;
+    z-index:1;
+    position:absolute;
+    left:600px;
+}
+.VItem #where{
+    margin-left:10px; 
+    display:inline-block; 
+    z-index:1;
+    position:absolute;
+    left:250px;
+}
+hr{position:relative;}
+#placeholder{height:50px;}
+#veranstaltungen #header{font-weight: bold; font-size:25px;}
+.videoPoster{    
+    margin-bottom:5px;
+    max-height:200px;
+    max-width:280px;
+    border-radius:5px;
+    padding:2px;
+    border:1px solid yellow;
+    position:relative;
+    background-color:#592336;
+}
+.videoPoster img{max-height:200px;max-width:280px;}
+.videoPoster p{margin-top:-5px; margin-bottom:-3px;}
+.playButton{
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:50px;
+    width:50px;
+    margin-left:-25px;
+    margin-top:-25px;
+}
+#video{
+    width:100%;
+    height:100%;
+    display:none;
+}
+#audio{
+    width:100%;
+    height:100%;
+    display:none;
+}
+#countdown{
+    width:100%;
+    height:100%;
+}

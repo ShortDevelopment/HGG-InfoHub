@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HGG-InfoHub</title>
+    <link href="MainStyleSheet.css" rel="stylesheet" />
+    <script src="MainScript.js"></script>
+    <script src="http://kurzweb.de/pc/forum/jquery-1.10.2.min.js"></script>
+</head>
+<body onload="init();">    
+    <div class="header">
+        <img id="logo1" src="Media/hgg.png" />        
+        <img id="timeline" />        
+        <img id="logo2" src="Media/hgg.png" />
+        <h1 id="title">HGG-InfoHub</h1>
+    </div>
+    <div id="infos">
+        <h2 id="title">Infos</h2>
+        <div id="mapSmall"></div>
+    </div>
+    <div id="veranstaltungen">
+        <h2 id="title">Veranstaltungen</h2>
+        <div id="placeholder"></div>
+        <div id="header">
+            <div class="VItem">
+                <div id="time">Uhrzeit</div>
+                <div id="where">Wo</div>
+                <div id="what">Was</div>                
+            </div>
+        </div>
+        <hr />
+        <div id="VContainer">            
+            <div class="VItem">
+                <div id="time">15:30 Uhr</div>                
+                <div id="where">Vor der Stadthalle</div>
+                <div id="what">Fotoaktion</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00-18:30 Uhr</div>
+                <div id="where">Vor dem Hauptgebäude</div>
+                <div id="what">Graffiti-Aktion </div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00-18:30 Uhr</div>
+                <div id="where">Vor der Stadthalle</div>
+                <div id="what">Hüpfburg und Parcours</div>
+            </div>
+            <div class="VItem">
+                <div id="time">17:00-17:30 Uhr</div>
+                <div id="where">Eingangsbereich Westbau</div>
+                <div id="what">Tischtennisturnier</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00-18:30 Uhr</div>
+                <div id="where">Start in der Magistrale</div>
+                <div id="what">Schulhausrallye</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00-20:00 Uhr*</div>
+                <div id="where">Start in der Magistrale</div>
+                <div id="what">Schulhausführung</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00-17:00 Uhr</div>
+                <div id="where">H2.12</div>
+                <div id="what">Pausenspiele -  Spiele des Jahres</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16, 16:30, 17 Uhr</div>
+                <div id="where">H1.06</div>
+                <div id="what">Sketche zu Filmen und Serien der letzten 50 Jahre</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:30, 17:30 Uhr</div>
+                <div id="where">H2.03</div>
+                <div id="what">Entspannung  im Raum der Stille</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00 Uhr**</div>
+                <div id="where">COM 2 (H 2.08)</div>
+                <div id="what">Film SMEP</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:00 Uhr</div>
+                <div id="where">Aula</div>
+                <div id="what">Kammermusik</div>
+            </div>
+            <div class="VItem">
+                <div id="time">16:45 Uhr</div>
+                <div id="where">Aula </div>
+                <div id="what">Auftritt der Tanz-AG</div>
+            </div>
+            <div class="VItem">
+                <div id="time">17:15 Uhr</div>
+                <div id="where">Aula</div>
+                <div id="what">Auftritt „Dance-Gang and Lara“</div>
+            </div>
+            <div class="VItem">
+                <div id="time">17:30 Uhr</div>
+                <div id="where">Bühne Haupthof</div>
+                <div id="what">Auftritt der Lehrerband</div>
+            </div>
+            <div class="VItem">
+                <div id="time">18:00 Uhr</div>
+                <div id="where">Bühne Haupthof</div>
+                <div id="what">Auftritt der HGG Big Band</div>
+            </div>
+            <div class="VItem">
+                <div id="time">18:40 Uhr</div>
+                <div id="where">Bühne Haupthof</div>
+                <div id="what">Preisverleihungen  Swim+Run und Grünini</div>
+            </div>
+            <div class="VItem">
+                <div id="time">19:00 Uhr</div>
+                <div id="where">Bühne Haupthof</div>
+                <div id="what">Auftritt der Band „Klangfarbe“</div>
+            </div>
+            <div class="VItem" style="display:none">
+                <div id="time">Zeit</div>
+                <div id="where">Raum</div>
+                <div id="what">Was</div>
+            </div>
+
+            <div style="font-size:20px;">
+                *&nbsp;&nbsp;&nbsp;&#8793; stündlich
+                <br/>
+                ** &#8793; viertelstündlich
+            </div>
+        </div>
+    </div>
+    <input type="button" style="display:none" onclick="toogleMap();" />
+    <div id="map"></div>
+</body>
+</html>
